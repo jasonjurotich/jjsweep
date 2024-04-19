@@ -238,10 +238,10 @@ macros {
     default_layer {
       display-name = "DEF";
       bindings = <
-       &lt NAV Q    &kp W      &kp E      &lt NUM R   &kp T        &kp Y  &lt NUM U   &kp I       &kp O    &kp P         
-       &lt MED A    &lt MSE S  &lt NUM D  &lt PRO F   &kp G        &kp H  &lt PRO J   &lt NUM K   &kp L    &lt MED ENTER
-       &mt LCTRL Z  &lt NAV X  &kp C      &mt LALT V  &kp B        &kp N  &lt LALT M  &kp COMMA   &kp DOT  &mt LCTRL BSPC
-       &mt LSHFT ESC           &mt LCMD TAB                        &mt RSHFT SPACE    &mt RSHFT SPACE
+       &kp Q        &kp W      &kp E      &lt NUM R   &kp T        &kp Y  &lt NUM U   &kp I       &kp O          &kp P         
+       &lt MED A    &lt MSE S  &lt NUM D  &lt PRO F   &kp G        &kp H  &lt PRO J   &lt NUM K   &kp L          &lt MED ENTER
+       &mt LCTRL Z  &lt NAV X  &kp C      &mt LALT V  &kp B        &kp N  &lt LALT M  &kp COMMA   &mt LCTRL DOT  &kp BSPC
+       &mt LSHFT ESC           &mt LCMD TAB                        &kp RSHFT          &mt RSHFT SPACE
       >;
     };
 
@@ -282,7 +282,7 @@ macros {
     nav_layer {
       display-name = "NAV";
       bindings = <      
-        TR  TR  TR  TR  TR           CBRID      CBRIU      CSPRE      CSNEX    TR
+        TR  TR  TR  TR  TR           CBRID      CBRIU      CSPRE      CSNEX    &kp CAPS
         TR  TR  TR  TR  TR           &spacl     TR         &spacu     &spacr   &kp BSPC
         TR  TR  TR  TR  TR           &kp HOME   &kp PG_DN  &kp PG_UP  &kp END  &ntilup
         TR  TR                       TR         &kp SPACE
@@ -304,7 +304,7 @@ macros {
     mse_layer {
       display-name = "MSE";
       bindings = <      
-        TR  TR  TR  TR  TR      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT TR
+        TR  TR  TR  TR  TR      TR              TR              TR            TR              TR
         TR  TR  TR  TR  TR      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT TR
         TR  TR  TR  TR  TR      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT TR
         TR  TR                  &mkp LCLK       &mkp RCLK
