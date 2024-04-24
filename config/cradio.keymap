@@ -136,8 +136,8 @@ macros {
   pss: pss {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
+    wait-ms = <15>;
+    tap-ms = <15>;
     bindings 
         = <&kp I &kp P &kp S &kp U &kp M &kp E &kp S &kp S &kp E>
         ;
@@ -146,8 +146,8 @@ macros {
   pss2: pss2 {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
+    wait-ms = <15>;
+    tap-ms = <15>;
     bindings 
         = <&kp LS(C) &kp A &kp M &kp P &kp N3 &kp S &kp T &kp R &kp N3 &kp N9 &kp DLLR &kp DLLR>
         ;
