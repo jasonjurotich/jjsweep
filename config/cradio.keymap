@@ -61,12 +61,18 @@
 };
 
 &lt {
-    tapping-term-ms = <300>;
+    tapping-term-ms = <200>;
 };
 
-&mt {
-    tapping-term-ms = <300>;
+tp: tapping_preferred {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&kp>, <&kp>;
 };
+
+
 
 / {
 macros {
@@ -247,8 +253,8 @@ macros {
       bindings = <
        &kp Q        &kp W      &kp E      &lt NUM R   &kp T        &kp Y  &lt NUM U   &kp I       &kp O          &kp P         
        &lt MED A    &lt MSE S  &lt NUM D  &lt PRO F   &kp G        &kp H  &lt PRO J   &lt NUM K   &kp L          &lt MED ENTER
-       &mt LCTRL Z  &lt NAV X  &kp C      &mt LALT V  &kp B        &kp N  &lt LALT M  &kp COMMA   &mt LCTRL DOT  &kp BSPC
-       &mt LSHFT ESC           &mt LCMD TAB                        &mt RSHFT SPACE    &mt RSHFT SPACE
+       &tp LCTRL Z  &lt NAV X  &kp C      &tp LALT V  &kp B        &kp N  &lt LALT M  &kp COMMA   &tp LCTRL DOT  &kp BSPC
+       &tp LSHFT ESC           &tp LCMD TAB                        &tp RSHFT SPACE    &tp RSHFT SPACE
       >;
     };
 
@@ -278,9 +284,9 @@ macros {
     med_layer {
       display-name = "MED";
       bindings = <      
-        TR  TR  TR  TR  TR      &lbegin    &lend     CVOLD    CVOLU      &kp C_PP 
-        TR  TR  TR  TR  TR      &kp LEFT   &kp DOWN  &kp UP   &kp RIGHT  &accut
-        TR  TR  TR  TR  TR      &pss       &pss2     &copies  &locks     &ntil
+        TR  TR  TR  TR  TR      &lbegin    &lend      CVOLD    CVOLU      &kp C_PP 
+        TR  TR  TR  TR  TR      &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT  &accut
+        TR  TR  TR  TR  TR      &pss       &pss2      &copies  &locks     &ntil
         TR  TR                  TR         &kp SPACE
       >;
     };
