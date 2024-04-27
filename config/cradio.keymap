@@ -64,7 +64,7 @@
     tapping-term-ms = <200>;
 };
 
-tp: tapping_preferred {
+&tp: tapping_preferred {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     flavor = "tap-preferred";
