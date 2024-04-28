@@ -21,7 +21,7 @@
 
 &msc {
     acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <10>;      // 300
+    time-to-max-speed-ms = <0>;      // 300
     delay-ms = <0>;                   // 0
 };
 
@@ -57,7 +57,7 @@
 #define CBRIU &kp C_BRI_UP
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS BSPC>;
+    continue-list = <UNDERSCORE MINUS BSPC SPACE>;
 };
 
 &lt {
